@@ -6,3 +6,4 @@ while a==1:
  current_time = datetime.now().time()
  print(current_time)
  time.sleep(5)
+
