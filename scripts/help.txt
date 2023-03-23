@@ -1,0 +1,6 @@
+ source ~/catkin_ws/devel/setup.bash
+ cd ~/catkin_ws/src
+ roscd super_pavel_study_pkg
+ chmod +x scripts/talker.py
+ rosrun super_pavel_study_pkg talker.py
+rosrun super_pavel_study_pkg talker.py __ns:=microcontroller1
