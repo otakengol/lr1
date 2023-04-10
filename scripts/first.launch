@@ -1,0 +1,12 @@
+<launch>
+  <group ns="my_ns">
+    <node name="sender" pkg="rospy_tutorials" type="listener.py" output="screen">
+     <remap from="chatter" to="new_chatter"/>
+    </node>
+  <include file="$(find super_pavel_study_pkg)/scripts/another_one.launch" >   
+  </include>
+    <node name="receiver" pkg="rospy_tutorials" type="talker.py" output="screen">  
+     <remap from="chatter" to="new_chatter"/>   
+    </node>
+ </group>
+</launch>

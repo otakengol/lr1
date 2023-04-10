@@ -1,0 +1,10 @@
+<launch>
+  <group ns='new_ns'>
+   <node name='polynomial' pkg='super_pavel_study_pkg' type='polynomial.py' output='screen'/>
+   <node name='summing' pkg='super_pavel_study_pkg' type='summing.py' output='screen'/>
+  </group>
+   <node name='request' pkg='super_pavel_study_pkg' type='request.py' output='screen' >
+    <remap from='requestpol' to='new_ns/requestpol' />
+    <remap from='summingreq' to='new_ns/summingreq' />
+  </node>
+</launch>

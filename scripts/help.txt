@@ -4,3 +4,6 @@
  chmod +x scripts/talker.py
  rosrun super_pavel_study_pkg talker.py
 rosrun super_pavel_study_pkg talker.py __ns:=microcontroller1
+
+
+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
